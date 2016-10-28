@@ -1,0 +1,11 @@
+.tela{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -200px;
+	margin-left: -300px;
+	width:600px; /* Valor da Largura */
+	height:400px; /* Valor da Altura */
+	background:#FF0000;
+	text-align: justify;
+}
