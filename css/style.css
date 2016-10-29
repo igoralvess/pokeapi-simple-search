@@ -1,4 +1,16 @@
-.tela{
+body{
+	background-image: url("../img/back.jpg");
+	
+	background-size: cover; 
+
+	background-attachment:  fixed;
+	
+	background-position: center;
+
+	background-repeat: no-repeat;
+
+}
+.janela{
 	position: absolute;
 	top: 50%;
 	left: 50%;
@@ -6,6 +18,55 @@
 	margin-left: -300px;
 	width:600px; /* Valor da Largura */
 	height:400px; /* Valor da Altura */
-	background:#FF0000;
-	text-align: justify;
+	background:#6A5ACD;
 }
+.titulo{
+	text-align: center;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family:"Segoe UI";
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 3px 0 #666;
+}
+.input{
+
+	position: absolute;
+	width:300px; /* Valor da Largura */
+	height:30px; /* Valor da Altura */
+	left: 150px;
+	top: 200px;
+}
+.botao{
+	padding: 4px 11px;
+
+	border: 1px solid #87CEEB;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+
+
+	background: -webkit-linear-gradient(top, #87CEEB, #C0C0C0) !important;
+	background: -moz-linear-gradient(top, #87CEEB, #C0C0C0) !important;
+	background: -ms-linear-gradient(top, #87CEEB, #C0C0C0) !important;
+	background: -o-linear-gradient(top, #87CEEB, #C0C0C0) !important;
+
+	box-shadow: inset 0 1px 1px #fff, 0 2px 3px #666;
+	cursor:pointer;
+	position: absolute;
+
+	width: 150px;
+	height: 25px;
+	text-align: center;
+	left: 220px;
+	top: 255px;
+
+	text-decoration: none;
+	text-transform: uppercase;
+	font-family:"Segoe UI";
+	font-weight: bold;
+	color: #fff;
+	text-shadow: 0 1px 0 #666;
+}
+
