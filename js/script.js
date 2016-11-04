@@ -18,6 +18,7 @@ function habilitaBtn(){
 function callApi(){
 	var nome = document.getElementById("campo").value;
 	var xhr = new XMLHttpRequest();
+
 	xhr.open("GET", "http://pokeapi.co/api/v2/pokemon/charmander", true);
 	xhr.send(null);
 	xhr.onreadystatechange = function () 
@@ -25,7 +26,9 @@ function callApi(){
 		
 	    if (xhr.readyState === 4)
 	    {
-	        //console.log(xhr.response);
+
+	    	var dadosJSON = xhr.responseText;
+	    	alert("teste");
 	    }
 	}
 }
