@@ -20,6 +20,16 @@ body{
 	height:400px; /* Valor da Altura */
 	background:#6A5ACD;
 }
+.janela-dados{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-top: -250px;
+	margin-left: -350px;
+	width:700px; /* Valor da Largura */
+	height:500px; /* Valor da Altura */
+	background:#191970;
+}
 .titulo{
 	text-align: center;
 

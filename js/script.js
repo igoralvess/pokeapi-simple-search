@@ -1,4 +1,11 @@
-function habilitaBtn(){ 
+
+document.getElementById("botao").disabled = true;
+document.getElementById("jDados").style.display = 'none';
+document.getElementById("campo").addEventListener("keyup", function() {habilitaBtn()});
+document.getElementById("botao").addEventListener("click", function() {callApi()});
+
+
+function habilitaBtn(){
 
 	var campo = document.getElementById("campo").value;
 
@@ -19,16 +26,17 @@ function callApi(){
 	var nome = document.getElementById("campo").value;
 	var xhr = new XMLHttpRequest();
 
-	xhr.open("GET", "http://pokeapi.co/api/v2/pokemon/charmander", true);
+	xhr.open("GET", "http://www.pokeapi.co/api/v2/pokemon/" + nome, true);
 	xhr.send(null);
 	xhr.onreadystatechange = function () 
 	{
 		
-	    if (xhr.readyState === 4)
+	    if (xhr.readyState === 4 && xhr.status == 200)
 	    {
 
-	    	var dadosJSON = xhr.responseText;
-	    	alert("teste");
+	    	dados = JSON.parse(xhr.responseText);
+	    	document.getElementById("jDados").style.display = 'block';
+	    	//alert(dados.forms[0].name);
 	    }
 	}
 }
