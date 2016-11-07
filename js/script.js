@@ -1,18 +1,19 @@
 
 document.getElementById("botao").disabled = true;
 document.getElementById("jDados").style.display = 'none';
-document.getElementById("campo").addEventListener("keyup", function() {habilitaBtn()});
+document.getElementById("inputNome").addEventListener("keyup", function() {habilitaBtn()});
 document.getElementById("botao").addEventListener("click", function() {callApi()});
+document.getElementById("pesqNovamente").addEventListener("click", function() {pesqNovamente()});
 
 
 function habilitaBtn(){
 
-	var campo = document.getElementById("campo").value;
+	var inputNome = document.getElementById("inputNome").value;
 
-	while(campo.indexOf(" ") != -1){
- 		campo = campo.replace(" ", "");
+	while(inputNome.indexOf(" ") != -1){
+ 		inputNome = inputNome.replace(" ", "");
  	}
- 	var cont = campo.length;
+ 	var cont = inputNome.length;
 
 	if(cont >= 3 ){
 
@@ -23,7 +24,7 @@ function habilitaBtn(){
 }
 
 function callApi(){
-	var nome = document.getElementById("campo").value;
+	var nome = document.getElementById("inputNome").value;
 	var xhr = new XMLHttpRequest();
 
 	xhr.open("GET", "http://www.pokeapi.co/api/v2/pokemon/" + nome, true);
@@ -64,4 +65,10 @@ function resultado(dados){
 
 	div.style.display = 'block';
 
+}
+
+function pesqNovamente(){
+
+	document.getElementById("tipos").remove();
+	document.getElementById("jDados").style.display = 'none';
 }
