@@ -34,9 +34,34 @@ function callApi(){
 	    if (xhr.readyState === 4 && xhr.status == 200)
 	    {
 
-	    	dados = JSON.parse(xhr.responseText);
-	    	document.getElementById("jDados").style.display = 'block';
+	    	var dados = JSON.parse(xhr.responseText);
+	    	resultado(dados);
 	    	//alert(dados.forms[0].name);
 	    }
+	    else {
+
+	    	alert("O pokemón informado não existe!");
+	    }
 	}
+}
+
+function resultado(dados){
+
+	var div = document.getElementById("jDados");
+	var nome = dados.forms[0].name;
+	var numero = dados.id;
+	var quantTipos = dados.types.length;
+	var ul = document.getElementById("tipos");
+
+	for (var i = 0; i < quantTipos; i++) {
+		var li = document.createElement("li");
+		li.appendChild(document.createTextNode(dados.types[i].type.name));
+		ul.appendChild(li);
+	}
+
+	document.getElementById("p1").innerHTML = "Nome: " + nome;
+	document.getElementById("p2").innerHTML = "Numero: " + numero;
+
+	div.style.display = 'block';
+
 }

@@ -10,6 +10,7 @@ body{
 	background-repeat: no-repeat;
 
 }
+
 .janela{
 	position: absolute;
 	top: 50%;
@@ -28,7 +29,7 @@ body{
 	margin-left: -350px;
 	width:700px; /* Valor da Largura */
 	height:500px; /* Valor da Altura */
-	background:#191970;
+	background:	#6A5ACD;
 }
 .titulo{
 	text-align: center;
@@ -39,6 +40,14 @@ body{
 	font-weight: bold;
 	color: #fff;
 	text-shadow: 0 3px 0 #666;
+}
+.texto{
+
+
+	text-decoration: none;
+	font-family:"Segoe UI";
+	font-size: 30px;
+	color: #fff;
 }
 .input{
 
