@@ -69,6 +69,6 @@ function resultado(dados){
 
 function pesqNovamente(){
 
-	document.getElementById("tipos").remove();
+	document.getElementById("tipos").innerHTML = '';
 	document.getElementById("jDados").style.display = 'none';
 }
