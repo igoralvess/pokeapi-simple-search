@@ -38,7 +38,7 @@ function callApi(){
 	    	resultado(dados);
 	    	//alert(dados.forms[0].name);
 	    }
-	    else {
+	    else if (xhr.status != 200){
 
 	    	alert("O pokemón informado não existe!");
 	    }
