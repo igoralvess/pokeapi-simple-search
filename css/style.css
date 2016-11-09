@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Special+Elite');
 body{
 	background-image: url("../img/back.jpg");
 	
@@ -36,17 +37,17 @@ body{
 
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family:"Segoe UI";
+	font-family: 'Special Elite', cursive;
 	font-weight: bold;
 	color: #9966FF;
-	text-shadow: 0 3px 0 #666;
+
 }
 .titulo2{
 	text-align: center;
 
 	text-decoration: none;
 	text-transform: uppercase;
-	font-family:"Segoe UI";
+	font-family: 'Special Elite', cursive;
 	font-weight: bold;
 	color: #F0FFF0;
 	text-shadow: 0 3px 0 #666;
@@ -55,7 +56,7 @@ body{
 
 
 	text-decoration: none;
-	font-family:"Segoe UI";
+	font-family: 'Special Elite', cursive;
 	font-size: 30px;
 	color: #000;
 }
