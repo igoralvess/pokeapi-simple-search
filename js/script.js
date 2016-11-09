@@ -1,9 +1,11 @@
 
 document.getElementById("botao").disabled = true;
+document.getElementById("inputNome").value = "   Nome";
 document.getElementById("jDados").style.display = 'none';
 document.getElementById("inputNome").addEventListener("keyup", function() {habilitaBtn()});
 document.getElementById("botao").addEventListener("click", function() {callApi()});
 document.getElementById("pesqNovamente").addEventListener("click", function() {pesqNovamente()});
+document.getElementById("inputNome").addEventListener("click", function() {limpaTexto()});
 
 
 function habilitaBtn(){
@@ -72,3 +74,8 @@ function pesqNovamente(){
 	document.getElementById("tipos").innerHTML = '';
 	document.getElementById("jDados").style.display = 'none';
 }
+function limpaTexto(){
+
+	document.getElementById("inputNome").value = "";
+}
+
